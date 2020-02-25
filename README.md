@@ -17,4 +17,9 @@ setupvars.bat
 Model Optimizer는 필수 요소.<br/>
 MO 동작 없이는 추론 불가<br/>
 MO에 pre-train된 모델을 실행시킬 때의 출력: 네트워크의 IR(Intermediate Representation)<br/>
-xml : 신경망 형태 / bin : 가중치, 바이어스 이진 데이터
+xml : 신경망 형태 / bin : 가중치, 바이어스 이진 데이터<br/>
+
+```
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\model_optimizer
+```
+의 reqirements.txt와 프레임워크에 맞는 reqirements_*.txt로 dependency 설치(파이썬)
