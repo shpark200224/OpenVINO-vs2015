@@ -11,7 +11,8 @@ cd C:\Program Files (x86)\IntelSWTools\openvino\bin\
 ```
 setupvars.bat
 ```
-파일 실행
+파일 실행<br/>
+
 3. Model Optimizer 설정
 Model Optimizer는 필수 요소.<br/>
 MO 동작 없이는 추론 불가<br/>
