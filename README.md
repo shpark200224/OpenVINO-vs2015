@@ -1,9 +1,9 @@
 # OpenVINO-vs2015
 
-## OpenVINO 설치
+## 1. OpenVINO 설치
+홈페이지 이용
 
-1. full package 설치(홈페이지 이용)<br/>
-2. 환경 변수 설정<br/>
+## 2. 환경 변수 설정<br/>
 ```
 cd C:\Program Files (x86)\IntelSWTools\openvino\bin\
 ```
@@ -11,15 +11,19 @@ cd C:\Program Files (x86)\IntelSWTools\openvino\bin\
 ```
 setupvars.bat
 ```
-파일 실행<br/>
+파일 실행
 
-3. Model Optimizer 설정
-Model Optimizer는 필수 요소.<br/>
-MO 동작 없이는 추론 불가<br/>
-MO에 pre-train된 모델을 실행시킬 때의 출력: 네트워크의 IR(Intermediate Representation)<br/>
-xml : 신경망 형태 / bin : 가중치, 바이어스 이진 데이터<br/>
+## 3. C++ 샘플 프로젝트 빌드
+```
+cd C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\inference_engine\samples\cpp
+```
+위 경로로 이동 후 빌드 파일 실행
+```
+build_samples_msvc.bat VS2015
+```
+Cmake 환경 변수 등록 필요
 
-```
-C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\model_optimizer
-```
-의 reqirements.txt와 프레임워크에 맞는 reqirements_*.txt로 dependency 설치(파이썬)
+## 4. C++ 샘플 프로젝트 실행파일 빌드
+
+C:\Users\USER\Documents\Intel\OpenVINO\inference_engine_cpp_samples_build <br>
+Samples.sln 실행 > ALLBUILD 컴파일
