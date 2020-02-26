@@ -48,3 +48,6 @@ plugins.xml<br/>
 ```
 hello_classification ./IR/alexnet.xml cat.bmp GPU
 ```
+
+실행 결과
+<img src="/doc/result.png" title="result" alt="result"></img><br/>
