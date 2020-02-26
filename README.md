@@ -25,5 +25,26 @@ Cmake 환경 변수 등록 필요
 
 ## 4. C++ 샘플 프로젝트 실행파일 빌드
 
-C:\Users\USER\Documents\Intel\OpenVINO\inference_engine_cpp_samples_build <br>
+C:\Users\USER\Documents\Intel\OpenVINO\inference_engine_cpp_samples_build <br/>
 Samples.sln 실행 > ALLBUILD 컴파일
+
+## 5. hello_classification
+* 필요 dll파일<br/>
+clDNNPlugin.dll<br/>
+inference_engine.dll<br/>
+inference_engine_nn_builder.dll<br/>
+inference_engine_preproc.dll<br/>
+ngraph.dll<br/>
+opencv_core420.dll<br/>
+opencv_imgcodecs420.dll<br/>
+opencv_imgproc420.dll<br/>
+tbb.dll<br/>
+plugins.xml<br/>
+
+* 가중치 파라미터(xml, bin) - Model Optimizer로 변환한 것<br/>
+* bmp 이미지<br/>
+
+실행 명령어 예
+```
+hello_classification ./IR/alexnet.xml cat.bmp GPU
+```
