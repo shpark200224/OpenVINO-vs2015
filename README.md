@@ -50,4 +50,4 @@ hello_classification ./IR/alexnet.xml cat.bmp GPU
 ```
 
 실행 결과
-<img src="/doc/hello_classification_result.png" title="result" alt="result"></img><br/>
+<img src="/doc/hello_classification_result.jpg" title="result" alt="result"></img><br/>
